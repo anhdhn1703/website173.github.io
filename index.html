@@ -1,49 +1,214 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio của Nam Anh</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="css/meyawo.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">Giới thiệu</a></li>
-                <li><a href="#skills">Kỹ năng</a></li>
-                <li><a href="#contact">Liên hệ</a></li>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">Nam Anh</a>
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#testmonial">Testmonial</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
             </ul>
-        </nav>
-    </header>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
 
-    <main>
-        <section id="about">
-            <h1>Xin chào, tôi là Nam Anh</h1>
-            <p>Giới thiệu ngắn về bản thân</p>
-        </section>
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span>
+                <span class="down">I'm Nam Anh</span>
+            </h1>
+            <p class="header-subtitle">Developer</p>
 
-        <section id="skills">
-            <h2>Kỹ năng</h2>
-            <div class="skills-container">
-                <!-- Thêm kỹ năng của bạn vào đây -->
+            <button class="btn btn-primary">Visit My Works</button>
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="imgs/man.png" class="about-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">Who Am I ?</p>
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p>
+                        Hello! My name is Nam Anh, a passionate Java Developer who loves solving complex problems and
+                        building scalable software solutions. I’m dedicated to growing my career, constantly learning,
+                        and striving for success in the ever-evolving tech world. But beyond work, I believe life is
+                        best when shared with the right person. I’m looking for a meaningful and loving
+                        relationship—someone to share laughter, dreams, and adventures with. To me, a fulfilling life
+                        balances both professional growth and personal happiness, and I’m excited for what the future
+                        holds!
+                    </p>
+                    <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
+                </div>
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+<!-- service section -->
+<section class="section" id="service">
+    <div class="container text-center">
+        <p class="section-subtitle">What I Do ?</p>
+        <h6 class="section-title mb-6">Service</h6>
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="body">
+                        <img src="imgs/responsive.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                        <h6 class="title">Web Development</h6>
+                        <p class="subtitle">Design and develop web applications using Java, Spring Boot, and frontend technologies like ReactJS.</p>
+                    </div>
+                </div>
             </div>
-        </section>
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="body">
+                        <img src="imgs/toolbox.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                        <h6 class="title">Backend Systems</h6>
+                        <p class="subtitle">Build robust backend systems, optimize APIs, and manage data using Spring Boot and Hibernate.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="service-card">
+                    <div class="body">
+                        <img src="imgs/analytics.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                        <h6 class="title">Problem Solving</h6>
+                        <p class="subtitle">Analyze, optimize algorithms, and improve system performance to solve complex problems.</p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end of row -->
+    </div>
+</section><!-- end of service section -->
 
-        <section id="contact">
-            <h2>Liên hệ</h2>
-            <form id="contact-form">
-                <input type="email" placeholder="Email của bạn">
-                <textarea placeholder="Nội dung tin nhắn"></textarea>
-                <button type="submit">Gửi</button>
-            </form>
-        </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2025 Nam Anh</p>
-    </footer>
+    <!-- portfolio section -->
+    <section class="section" id="portfolio">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Did ?</p>
+            <h6 class="section-title mb-6">Portfolio</h6>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="portfolio-card">
+                        <h5 class="portfolio-title">HR Management System</h5>
+                        <p>An application for managing employees using Spring Boot, Hibernate, and React.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-card">
+                        <h5 class="portfolio-title">E-Commerce Website</h5>
+                        <p>Developed an online shopping platform using Java Spring Boot and VueJS.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="portfolio-card">
+                        <h5 class="portfolio-title">Finance Tracking App</h5>
+                        <p>An application for tracking personal expenses and finances using Spring Boot.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- row -->
 
-    <script src="js/script.js"></script>
+        </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section> <!-- end of portfolio section -->
+
+
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">How can you communicate?</p>
+            <h6 class="section-title mb-5">Contact Me</h6>
+            <!-- contact form -->
+            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="email" class="form-control" placeholder="Enter Email" requried>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea name="comment" id="comment" rows="6" class="form-control"
+                            placeholder="Write Something"></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                    </div>
+                </div>
+            </form><!-- end of contact form -->
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">
+            <p class="mb-0">Copyright
+                <script>document.write(new Date().getFullYear())</script> &copy; <a href="#">Nam Anh</a>
+            </p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+
+    <!-- core  -->
+    <script src="vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="js/meyawo.js"></script>
+
 </body>
+
 </html>
